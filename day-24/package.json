@@ -1,0 +1,16 @@
+{
+  "name": "day-24-coding-challenge",
+  "version": "1.0.0",
+  "description": "In this repository,3 questions are included. Question # 70, 71 And 72",
+  "main": "main.js",
+  "type": "module",
+  "bin": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  }
+}
