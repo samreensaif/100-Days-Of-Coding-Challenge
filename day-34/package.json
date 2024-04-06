@@ -1,0 +1,20 @@
+{
+  "name": "day-34-coding-challenge",
+  "version": "1.0.0",
+  "description": "Question # 100, Question # 101, Question # 102 Coding Challenges of Day 34",
+  "main": "main.js",
+  "type": "module",
+  "bin": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.4"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.17"
+  }
+}
