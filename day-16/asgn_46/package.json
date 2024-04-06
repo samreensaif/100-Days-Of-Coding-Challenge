@@ -1,0 +1,15 @@
+{
+  "name": "asgn_46",
+  "version": "1.0.0",
+  "description": "enhances laptop option",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "samreen saif",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.28"
+  }
+}
