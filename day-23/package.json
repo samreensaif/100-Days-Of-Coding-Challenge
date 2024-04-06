@@ -1,0 +1,16 @@
+{
+  "name": "day-23-coding",
+  "version": "1.0.0",
+  "description": "Solved  Codes of exercises 67, exercise 68 and exercise 69",
+  "main": "main.js",
+  "type":"module",
+  "bin": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  }
+}
