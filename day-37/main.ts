@@ -38,7 +38,7 @@ if ( currentHour>= 0 && currentHour < 12 && currentMin >= 0 && currentMin <60)
 console.log ( chalk.blueBright(`\n\n\tQuestion 110: Use Of if-else-if Chain
 \n\t +++++++++++++++++++++++++++++++++++\n\n`))
 
-console.log(chalk.yellowBright(`\n\tGRADING SYSTEM\n\t--------------\n\n`))
+console.log(chalk.yellowBright(`\n\t\tGRADING SYSTEM\n\t\t--------------\n\n`))
 
 let marksObtained = await inquirer.prompt({
 
@@ -58,25 +58,25 @@ let marksObtained = await inquirer.prompt({
 
 else if ( totalMarks >=40 && totalMarks <50)
     {
-        console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got D - Grade`))
+        console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t  You Got D - Grade`))
     }
  else if ( totalMarks >=50 && totalMarks <60)
     {
-        console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got C - Grade`))
+        console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t  You Got C - Grade`))
     }
  else if ( totalMarks >=60 && totalMarks <70)
     {
-        console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got B - Grade`))
+        console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t  You Got B - Grade`))
     }
 
 else if ( totalMarks >=70 && totalMarks <80)
     {
-        console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t You Got A - Grade`))
+        console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t You Got A - Grade`))
     
     }
 else if ( totalMarks >=80 && totalMarks <=99)
     {
-        console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t You Got A-1 - Grade`))
+        console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t You Got A-1 - Grade`))
     }
 
 else 

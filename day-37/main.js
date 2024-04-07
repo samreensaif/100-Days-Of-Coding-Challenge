@@ -18,7 +18,7 @@ else {
 // Explain & TIP: A common grading system assigns letter grades based on score ranges. You can use an if-else-if chain to determine the grade.
 console.log(chalk.blueBright(`\n\n\tQuestion 110: Use Of if-else-if Chain
 \n\t +++++++++++++++++++++++++++++++++++\n\n`));
-console.log(chalk.yellowBright(`\n\tGRADING SYSTEM\n\t--------------\n\n`));
+console.log(chalk.yellowBright(`\n\t\tGRADING SYSTEM\n\t\t--------------\n\n`));
 let marksObtained = await inquirer.prompt({
     name: "marks",
     type: "number",
@@ -30,26 +30,26 @@ if (totalMarks < 40) {
     console.log(chalk.redBright(`\n\tSORRY!!!\n\n\t  FAIL `));
 }
 else if (totalMarks >= 40 && totalMarks < 50) {
-    console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got D - Grade`));
+    console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t  You Got D - Grade`));
 }
 else if (totalMarks >= 50 && totalMarks < 60) {
-    console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got C - Grade`));
+    console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t  You Got C - Grade`));
 }
 else if (totalMarks >= 60 && totalMarks < 70) {
-    console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got B - Grade`));
+    console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t  You Got B - Grade`));
 }
 else if (totalMarks >= 70 && totalMarks < 80) {
-    console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t You Got A - Grade`));
+    console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t You Got A - Grade`));
 }
 else if (totalMarks >= 80 && totalMarks <= 99) {
-    console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t You Got A-1 - Grade`));
+    console.log(chalk.magentaBright(`\n\t\t  CONGRATULATIONS!!!\n\n\t\t You Got A-1 - Grade`));
 }
 else {
     console.log(chalk.red(`\n\t   CONGRATULATIONS!!!\n\n\t RESULT OF SNDH GOVERNMENT `));
 }
 // Question 111: Use an if-else-if chain to categorize a person's age group (child, teenager, adult).
 // Explain & TIP: Age groups can typically be categorized by specific ranges. For instance, you might consider anyone under 13 a child, between 13 and 19 a teenager, and 20 or older an adult.
-console.log(chalk.blueBright(`\n\n\tQuestion 111: Use Of if-else-if Chain
+console.log(chalk.blueBright(`\n\n\t Question 111: Use Of if-else-if Chain
 \n\t +++++++++++++++++++++++++++++++++++++\n\n`));
 let yourAge = await inquirer.prompt({
     name: "age",
