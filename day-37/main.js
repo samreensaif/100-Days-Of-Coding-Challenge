@@ -26,8 +26,11 @@ let marksObtained = await inquirer.prompt({
 });
 let totalMarks = Math.round((marksObtained.marks / 1100) * 100);
 console.log(chalk.greenBright `\nPercentage: `, totalMarks + ` %`);
-if (totalMarks <= 50) {
+if (totalMarks < 40) {
     console.log(chalk.redBright(`\n\tSORRY!!!\n\n\t  FAIL `));
+}
+else if (totalMarks >= 40 && totalMarks < 50) {
+    console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got D - Grade`));
 }
 else if (totalMarks >= 50 && totalMarks < 60) {
     console.log(chalk.magentaBright(`\n\t  CONGRATULATIONS!!!\n\n\t  You Got C - Grade`));
@@ -44,3 +47,18 @@ else if (totalMarks >= 80 && totalMarks <= 99) {
 else {
     console.log(chalk.red(`\n\t   CONGRATULATIONS!!!\n\n\t RESULT OF SNDH GOVERNMENT `));
 }
+// Question 111: Use an if-else-if chain to categorize a person's age group (child, teenager, adult).
+// Explain & TIP: Age groups can typically be categorized by specific ranges. For instance, you might consider anyone under 13 a child, between 13 and 19 a teenager, and 20 or older an adult.
+console.log(chalk.blueBright(`\n\n\tQuestion 111: Use Of if-else-if Chain
+\n\t +++++++++++++++++++++++++++++++++++++\n\n`));
+let yourAge = await inquirer.prompt({
+    name: "age",
+    type: "number",
+    message: "Your Current Age: "
+});
+if (yourAge.age < 13)
+    console.log(chalk.greenBright(` \n\n You Are A CHILD`));
+else if (yourAge.age >= 13 && yourAge.age <= 19)
+    console.log(chalk.greenBright(` \n\n You Are A TEENAGER `));
+else if (yourAge.age >= 20)
+    console.log(chalk.greenBright(` \n\n You Are An ADULT `));
