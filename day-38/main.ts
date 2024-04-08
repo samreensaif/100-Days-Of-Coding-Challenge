@@ -7,7 +7,7 @@
 import chalk from "chalk";
 
 
-console.log(chalk.greenBright(`\n\t\t\t Day 38 Challenge:\n\n\t\tQuestion 112: The Map object in JavaScript\n\t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^`))
+console.log(chalk.greenBright(`\n\t\t\t Day 38 Challenge:\n\n\t\tQuestion 112: The Map object in JavaScript\n\t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n`))
 
 let countries = new Map()
 
@@ -24,8 +24,6 @@ console.log (chalk.blueBright(countries.get("Pakistan")));  //console only 1st k
 console.log (chalk.blueBright(countries.get("India")))     //console only 2st key by using get()
 
 console.log (chalk.blueBright(countries.get("Bangladesh")));  //console only 3st key by using get()
-
-
 
 
 // Question 113: Write a function that checks if a Map contains a key for "Canada" and logs the capital if it exists.
@@ -46,7 +44,6 @@ console.log(chalk.blueBright(`Bangladesh : `, countries.has ("Bangladesh")))
 // Explain & TIP: Iterating over a Map can be done using the .forEach() method or a for...of loop, providing access to each key-value pair.
 
 console.log(chalk.greenBright(`\n\t\tQuestion 114: Iteration over Map object \n\t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^`))
-
 
 let studentInfo = new Map();
 
