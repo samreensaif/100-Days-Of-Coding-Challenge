@@ -38,5 +38,5 @@ for (let i = 0; i <= ask.msg.length; i++) {
         ask.msg.charAt(i) === "i" ||
         ask.msg.charAt(i) === "o" ||
         ask.msg.charAt(i) === "u")
-        console.log(chalk.greenBright(`\n\n\t\t In The String ${ask.msg} Vowel Comes At Position `), chalk.magentaBright(`${i}`));
+        console.log(chalk.greenBright(`\n\n\t\t In The String "${ask.msg}" Vowel  "${ask.msg.charAt(i)}" Comes At Position `), chalk.magentaBright(`${i}\n`));
 }
