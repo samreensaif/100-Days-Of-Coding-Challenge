@@ -61,7 +61,7 @@ console.log(`\nDays Remaining to New Year`,new_Year())
 
 console.log(chalk.bgMagentaBright(`\n\t\tQuestion 99: Birth date`))
 
-function nextBirthDay( Month: number,Day: number ) :Date
+function nextBirthDay( Month: number,Day: number ) : Date
  {
 
 let birthday = new Date(currYear, Month - 1,Day); // Months are 0-indexed

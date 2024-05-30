@@ -18,7 +18,8 @@ let car =
     car_name : "Toyota",
     model : "Camry",
     year : 2024,
-    color : "Black" 
+    color : "Black",
+    make : null
 }
 
 console.log(`\n Object Car:`,car )

@@ -4,7 +4,7 @@
 
 let alienColor: string = "green"
 
-if(alienColor === "green") 
+ if(alienColor === "green")         
 
 {
     console.log("\nThe alien color is green so the player earned 5 points");

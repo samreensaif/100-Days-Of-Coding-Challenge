@@ -21,3 +21,9 @@ console.log(5+3);
 console.log(11-3);
 console.log(4*2);
 console.log(16/2);
+
+// add your name and the current date at the top of each program file.
+let myName:string="samreen saif"
+let cuurdate :Date = new Date()
+
+console.log(`my name ${myName} and todays date is: ${cuurdate}`);
