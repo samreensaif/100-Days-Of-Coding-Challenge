@@ -1,5 +1,4 @@
 //Question # 52 : Make a Smartphone Object: Create a simple way to keep track of a smartphone's detailes. Include its brand, model  and other key features like how much storage it has, the size of its screen and how long its battery last.
-import rename from "fs";
 console.log(`\n\t\t " Day - 18 - Coding - Challenge "
                       
                     Question # 52: SmartPhone Object`);
@@ -30,18 +29,11 @@ how to wash ${houseWife.laundry[0]} and ${houseWife.laundry[1]}`);
 console.log(`\n\t\t " Day - 18 - Coding - Challenge "                  
                       
                     Question # 54: Making Flexible Object Keys\n\n`); //template literals
-// Question # 54: Making Flexible Object Keys: Learn how to setup a list where you can change the name of each section based on what you need at that moment like adjusting labels based on new information
-let studentInformation = { name: "samreen", rNum: 65146, age: 30 };
-let changeKeyName = { name: "std_name", rNum: "rollNum", age: "stdAge" };
-let rstudentInformation = rename(studentInformation, changeKeyName);
-/*
-{
-    name : "Samreen Saif",
-    rollnum : 65146,
-    age : 30,
-    
+let userLabels = {};
+function setLabel(key, value) {
+    userLabels[key] = value;
 }
-
-console.log (`\nStudent Name is ${studentInformation.name} having roll # ${studentInformation.rollnum} and age is ${studentInformation.age}`)
-
-renamekeys{name: stdName, 
+setLabel("name", "samreen");
+setLabel("age", "thirty");
+console.log(userLabels);
+export {};

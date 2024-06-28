@@ -60,19 +60,22 @@ console.log(`\n\t\t " Day - 18 - Coding - Challenge "
 
 // Question # 54: Making Flexible Object Keys: Learn how to setup a list where you can change the name of each section based on what you need at that moment like adjusting labels based on new information
 
-let studentInformation = { name : "samreen", rNum : 65146, age : 30};
+type flexible_Objects = {
 
-let changeKeyName = { name : "std_name", rNum : "rollNum", age : "stdAge"};
+  [key:string]:any;
 
-let rstudentInformation = rename( studentInformation, changeKeyName);
-/*
-{
-    name : "Samreen Saif",
-    rollnum : 65146,
-    age : 30,
-    
 }
 
-console.log (`\nStudent Name is ${studentInformation.name} having roll # ${studentInformation.rollnum} and age is ${studentInformation.age}`)
+let userLabels :flexible_Objects={}
 
-renamekeys{name: stdName, 
+function setLabel(key:string,value:any){
+
+  userLabels[key]=value
+}
+
+setLabel("name","samreen")
+setLabel("age",30)
+setLabel("education","Bachelors")
+setLabel("isStudent",true)
+
+console.log(userLabels);
