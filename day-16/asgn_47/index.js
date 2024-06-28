@@ -19,11 +19,8 @@ let laptop = [
 ];
 console.log(laptop); //prints array of 3 objects
 //array destructuring
-let laptop1 = laptop[0];
-console.log(`first object in array oflaptop is: `, laptop1); // print 1st object
-console.log(laptop[0]);
+let [ltop1, ltop2] = laptop;
+console.log(`first object in array oflaptop is: `, ltop1); // print 1st object
 let laptop2 = laptop[1];
-console.log(`second object in array oflaptop is: `, laptop2); //print 2ns object
-let laptop3 = laptop[2];
-console.log(`third object in array oflaptop is: `, laptop3); //print 3rd object
+console.log(`second object in array oflaptop is: `, ltop2); //print 2ns object
 export {};
