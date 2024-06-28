@@ -10,15 +10,13 @@ console.log(`\nDouble The Numbers in an array:`, newArray);
 // Explain & TIP: We can pick out just the words from a mixed bag of items, creating a list that includes only those words.
 console.log(`\n\t\tDay 19- Challenge\n\n \t\tQuestion # 56 :KEEP ONLY STRING\n\n`);
 let person = ["samreen", 7876, 3360849799, "SSUET"];
-let newPerson = person.join(); //for joining the elements of array in a string
 console.log(`Original Array:`, person);
-console.log(` New Array after joining the elements :`, newPerson);
 //to pick only items which are a type of string we use filter with typeof
-let newString = person.filter(abc => typeof abc === "string");
+let newString = person.filter(abc => (typeof abc) === "string");
 console.log(` Array of strings `, newString);
 // Question 57: Find the Average Grade: Given a list of grades, calculate the average grade.
 console.log(`\n\t\tDay 19- Challenge\n\n \t\tQuestion # 57 :AVERAGE GRADES\n\n`);
 let aveGrades = [34, 68, 78, 57, 99];
-let average = aveGrades.reduce((preV, currV) => (preV + currV) / aveGrades.length);
+let average = aveGrades.reduce((preV, currV) => (preV + currV), 0) / aveGrades.length;
 console.log(` average of five given grades is: ${average} `);
 export {};
