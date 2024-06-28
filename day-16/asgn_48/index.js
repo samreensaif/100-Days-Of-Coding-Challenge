@@ -42,8 +42,11 @@ let laptop3 = laptp[2];
 console.log(`third object in array oflaptop is: `, laptop3); //print 3rd object
 // Assignment # 48. Combining Arrays with Spread Operator: Suppose you're comparing prices of two different sets of laptops. Use the spread operator to combine these arrays into a single array sorted in ascending order, then log the result.
 console.log(`\n ASSIGNMENT # 48 \n`);
-let hpPrices = [10000, 30000, 15000];
-let intlPrices = [20000, 10000, 12000];
+let hpPrices = [1000, 3000, 1500];
+let intlPrices = [2000, 10000, 1200];
 let combinelaptopPrices = [...hpPrices, ...intlPrices]; // combine the 2 arrays by spread operator
 console.log(combinelaptopPrices); //print the new array
-console.log(combinelaptopPrices.sort()); // first sort and then print the new combined array
+//The sort method, by default, sorts elements as strings, which can lead to incorrect numerical sorting. 
+//To sort numbers correctly, you should pass a comparison function to the sort method.
+combinelaptopPrices.sort((a, b) => a - b);
+console.log("ascending order", combinelaptopPrices);
