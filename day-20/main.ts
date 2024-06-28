@@ -6,21 +6,18 @@ import inquirer from "inquirer"
 
 console.log("\n\t\t Day20 Challenge \n\n\t\t Question 58 : AVERAGE SCORE CALCULATOR\n\n")
 
-let sum : number = 0 ;
-function avgscore (...score:number[])
+
+function avgscore (...score:number[]):number
 {
 
-    for (let i of score)
-{
-     sum = sum + i 
+let avg= score.reduce((a,b)=>a+b,0)/score.length
+
+return avg
 }
 
-console.log( `Sum of  ${score} is ${sum}. \n \nAverage of ${score} is ${sum/score.length}.\n`)
-    
-}
 
-avgscore(2,8,10);
-avgscore( 10,20,30,40,50,60);
+console.log("Average Score Calculator:",avgscore(2,8,10));
+console.log("\nAverage Score Calculator:",avgscore( 10,20,30,40,50,60));
 
 // Question 59: Add a Special Number: Make a program that creates custom adders. These adders can add a specific number to any other number you give them later.
 
@@ -73,6 +70,7 @@ const request = await inquirer.prompt([
 console.log(`\nUser's Name:`, request.username)
 
 console.log(`\nUser's Age:`, request.age)
+
 
 
 

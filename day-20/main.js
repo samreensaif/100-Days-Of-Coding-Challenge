@@ -2,15 +2,12 @@ import inquirer from "inquirer";
 // Day 20 Challenge: Start Coding! 🚀
 // Question 58: Average Score Calculator: Write a simple program that can take lots of scores and find their average.
 console.log("\n\t\t Day20 Challenge \n\n\t\t Question 58 : AVERAGE SCORE CALCULATOR\n\n");
-let sum = 0;
 function avgscore(...score) {
-    for (let i of score) {
-        sum = sum + i;
-    }
-    console.log(`Sum of  ${score} is ${sum}. \n \nAverage of ${score} is ${sum / score.length}.\n`);
+    let avg = score.reduce((a, b) => a + b, 0) / score.length;
+    return avg;
 }
-avgscore(2, 8, 10);
-avgscore(10, 20, 30, 40, 50, 60);
+console.log("Average Score Calculator:", avgscore(2, 8, 10));
+console.log("\nAverage Score Calculator:", avgscore(10, 20, 30, 40, 50, 60));
 // Question 59: Add a Special Number: Make a program that creates custom adders. These adders can add a specific number to any other number you give them later.
 console.log("\n\n\t\t Question 59 : ADD A SPECIAL NUMBER\n\n");
 //first version: add special number to each of the elements of the array
@@ -41,3 +38,7 @@ const request = await inquirer.prompt([
 ]);
 console.log(`\nUser's Name:`, request.username);
 console.log(`\nUser's Age:`, request.age);
+let arr = [1, 2];
+let arr1 = [3, 4];
+let result = arr.concat(arr1);
+console.log(result);
