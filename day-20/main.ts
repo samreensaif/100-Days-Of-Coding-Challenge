@@ -60,17 +60,21 @@ console.log( `\nnow add 392 to the given number we got: ${newnum}\n`);
 
 console.log("\n\n\t\t Question 60: Self Running User Profile\n\n")
 
-const request = await inquirer.prompt([
+//This is done using an immediately invoked function expression (IIFE). An IIFE is a function that runs as soon as it is defined.
 
-    { message :" enter your Username", type : "string", name: "username"},
+let user_profile =(function() {
 
-    { message: " enter your age", type: "number", name: "age"}
-]);
-
-console.log(`\nUser's Name:`, request.username)
-
-console.log(`\nUser's Age:`, request.age)
-
+    let usrName="Samreen";
+    let usrage=33
+    
+    return {display_info:function(){
+    
+        console.log(`UserName : ${usrName} and UserAge is: ${usrage}`);
+    
+    }
+    }
+    })()
+    user_profile.display_info()
 
 
 
