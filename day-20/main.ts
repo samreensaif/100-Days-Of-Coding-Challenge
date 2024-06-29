@@ -76,6 +76,20 @@ let user_profile =(function() {
     })()
     user_profile.display_info()
 
+    /* Step-by-Step Data Flow
+IIFE Execution:
+
+Variables usrName and usrage are initialized.
+An object with the display_info method is created and returned.
+Assignment:
+
+The returned object is assigned to user_profile.
+Method Invocation:
+
+When user_profile.display_info() is called, the method has access to usrName and usrage due to closure, and it logs "UserName: Samreen and UserAge is: 33" to the console.
+In summary, the data (user name and age) is defined inside the IIFE, returned as part of an object, and accessed by the display_info method when invoked, utilizing closures to retain access to the original data.
+*/
+
 
 
 
