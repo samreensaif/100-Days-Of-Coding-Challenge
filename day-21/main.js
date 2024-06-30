@@ -32,18 +32,16 @@ let student2 = {
 console.log(`Students Information: \nname: ${student2.name},\nage: ${student2.age},\nclass: ${student2.class},\nroll#: ${student2.rollnum}\ncourses:${student1.courses}`);
 // Question 63: Shape Shifter: Write a program that can describe either a circle or a rectangle using a special type alias, including properties unique to each shape.
 console.log(`\n\t\tDay-21-Coding-Challenge\n\n\t\t Question # 63: Creating Type Alias\n\n`);
-let circle = {
-    kind: "circle",
-    radius: "yes",
-    corners: 0,
-    side: 0
+let myCircle = {
+    kind: "Circle",
+    radius: 4,
+    circumference: 5
 };
-let square = {
-    kind: " square",
-    radius: "no",
-    corners: 4,
-    side: 4
+console.log(myCircle);
+let myRectangle = {
+    kind: "Rectangle",
+    length: 5,
+    breadth: 10
 };
-console.log(`\nShape:`, circle);
-console.log(`\nShape:`, square);
+console.log(myRectangle);
 export {};

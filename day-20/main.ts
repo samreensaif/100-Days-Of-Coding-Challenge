@@ -67,7 +67,7 @@ let user_profile =(function() {
     let usrName="Samreen";
     let usrage=33
     
-    return {display_info:function(){
+    return { display_info:function(){
     
         console.log(`UserName : ${usrName} and UserAge is: ${usrage}`);
     

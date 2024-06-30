@@ -54,27 +54,37 @@ console.log (`Students Information: \nname: ${student2.name},\nage: ${student2.a
 
 console.log(`\n\t\tDay-21-Coding-Challenge\n\n\t\t Question # 63: Creating Type Alias\n\n`)
 
-type shapeShifter = {
+type Circle = {
 
-   kind : "circle" | " square",
-   radius?:string, 
-   corners ?: number,
-    side?: number
-}
-let  circle: shapeShifter = {
-    kind: "circle",
-    radius : "yes",
-    corners:0,
-    side:0
+    kind : string,
+    radius : number,
+    circumference : number
 }
 
-let square : shapeShifter = {
-    kind: " square",
-    radius: "no",
-    corners : 4, 
-    side : 4
+type Rectangle = {
+
+    kind : string,
+    length : number,
+    breadth : number
 }
 
-console.log(`\nShape:`, circle)
+type ShapeShifter = Circle | Rectangle;
 
-console.log(`\nShape:`,square)
+let myCircle: ShapeShifter ={
+
+    kind : "Circle",
+    radius : 4,
+    circumference : 5
+}
+
+console.log(myCircle);
+
+let myRectangle : ShapeShifter = {
+
+    kind : "Rectangle",
+    length : 5,
+    breadth : 10
+}
+
+console.log( myRectangle);
+
