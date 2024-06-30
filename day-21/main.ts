@@ -75,6 +75,10 @@ let myRectangle: ShapeShifter = {
     breadth: 7
 }
 
+console.log(myCircle)
+
+console.log(myRectangle);
+
 function calculateDiameter( shape:ShapeShifter) : number | undefined{
     if(shape.kind === "circle" && shape.radius!==undefined)
         {

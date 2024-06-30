@@ -33,20 +33,25 @@ console.log(`Students Information: \nname: ${student2.name},\nage: ${student2.ag
 // Question 63: Shape Shifter: Write a program that can describe either a circle or a rectangle using a special type alias, including properties unique to each shape.
 console.log(`\n\t\tDay-21-Coding-Challenge\n\n\t\t Question # 63: Creating Type Alias\n\n`);
 let myCircle = {
-    kind: "Circle",
-    radius: 4,
-    circumference: 5
+    kind: "circle",
+    radius: 5
+};
+let myRectangle = {
+    kind: "rectangle",
+    length: 6,
+    breadth: 7
 };
 console.log(myCircle);
-let myRectangle = {
-    kind: "Rectangle",
-    length: 5,
-    breadth: 10
-};
 console.log(myRectangle);
+function calculateDiameter(shape) {
+    if (shape.kind === "circle" && shape.radius !== undefined) {
+        return (shape.radius * 2);
+    }
+}
+console.log("Diameter of a CIrcle", calculateDiameter(myCircle));
 function areaRect(shape) {
-    if (shape.kind === "Rectangle")
+    if (shape.kind === "rectangle" && shape.length !== undefined && shape.breadth !== undefined)
         return (shape.length * shape.breadth);
 }
-console.log(areaRect(myRectangle));
+console.log("Area of Rectangle", areaRect(myRectangle));
 export {};
