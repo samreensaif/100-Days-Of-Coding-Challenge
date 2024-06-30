@@ -44,4 +44,9 @@ let myRectangle = {
     breadth: 10
 };
 console.log(myRectangle);
+function areaRect(shape) {
+    if (shape.kind === "Rectangle")
+        return (shape.length * shape.breadth);
+}
+console.log(areaRect(myRectangle));
 export {};

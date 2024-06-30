@@ -54,37 +54,41 @@ console.log (`Students Information: \nname: ${student2.name},\nage: ${student2.a
 
 console.log(`\n\t\tDay-21-Coding-Challenge\n\n\t\t Question # 63: Creating Type Alias\n\n`)
 
-type Circle = {
+type ShapeShifter = {
 
-    kind : string,
-    radius : number,
-    circumference : number
+    kind : "circle" | "rectangle",
+    radius?: number,
+    length?: number,
+    breadth?: number
 }
 
-type Rectangle = {
+let myCircle :ShapeShifter = {
 
-    kind : string,
-    length : number,
-    breadth : number
+    kind:"circle",
+    radius : 5
 }
 
-type ShapeShifter = Circle | Rectangle;
+let myRectangle: ShapeShifter = {
 
-let myCircle: ShapeShifter ={
-
-    kind : "Circle",
-    radius : 4,
-    circumference : 5
+    kind: "rectangle",
+    length: 6,
+    breadth: 7
 }
 
-console.log(myCircle);
-
-let myRectangle : ShapeShifter = {
-
-    kind : "Rectangle",
-    length : 5,
-    breadth : 10
+function calculateDiameter( shape:ShapeShifter) : number | undefined{
+    if(shape.kind === "circle" && shape.radius!==undefined)
+        {
+    return (shape.radius*2)
+}
 }
 
-console.log( myRectangle);
+console.log("Diameter of a CIrcle",calculateDiameter(myCircle))
 
+function areaRect( shape: ShapeShifter): number | undefined{
+
+    if( shape.kind ==="rectangle" && shape.length!== undefined  && shape.breadth !== undefined)
+
+        return (shape.length * shape. breadth)
+}
+
+console.log("Area of Rectangle", areaRect(myRectangle))
