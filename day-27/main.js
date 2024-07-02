@@ -23,8 +23,9 @@ console.log(car);
 //  Question 81: Iterating Over Object Properties: Write a function that takes an object as an argument and logs all of its properties and values.
 // Explain & TIP: You can loop through each property of an object using a for...in loop. This is useful for when you need to examine or display all the information an object holds.
 console.log(chalk.yellowBright.bold(`\n\tQuestion 81: Iterating Over Object Properties: `));
-function makestudentObject(student) {
-    console.log(name, rollnum);
+function makestudentObject(obj) {
+    for (let i in obj) {
+        console.log(`${i}:${obj[i]}`);
+    }
 }
-let studentinfo = makestudentObject, { name = "samreen", rollnum = 19 };
-console.log(studentinfo);
+makestudentObject({ "Name": "Samreen", "Age": 33, "isMarried": true });
