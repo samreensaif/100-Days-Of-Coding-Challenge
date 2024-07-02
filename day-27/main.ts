@@ -54,13 +54,14 @@ console.log(chalk.yellowBright.bold(`\n\tQuestion 80: Updating Object Properties
 
 console.log(chalk.yellowBright.bold(`\n\tQuestion 81: Iterating Over Object Properties: `));
 
-function makestudentObject(...option: {[key:string|number]: any} [])
+function makestudentObject(obj: {[key:string|number]: any} )  //it takes only one object of multiple properties
 {
  
-    console.log( makestudentObject.name, makestudentObject.rollnum)
-
+    for( let i in obj ){
+    
+        console.log(`${i}:${obj[i]}` )
+}
 }
 
-let studentinfo = makestudentObject{"samreen", 19}
+ makestudentObject({"Name": "Samreen", "Age": 33, "isMarried": true})
 
-console.log(studentinfo)

@@ -54,4 +54,10 @@ function areaRect(shape) {
         return (shape.length * shape.breadth);
 }
 console.log("Area of Rectangle", areaRect(myRectangle));
+const myObj = {
+    name: "Muhammad Fasih",
+    city: "Karachi",
+    isMarried: false ? "Yes" : "No",
+};
+console.log(myObj);
 export {};

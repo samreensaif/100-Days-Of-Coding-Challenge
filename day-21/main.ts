@@ -96,3 +96,6 @@ function areaRect( shape: ShapeShifter): number | undefined{
 }
 
 console.log("Area of Rectangle", areaRect(myRectangle))
+
+
+  
